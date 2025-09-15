@@ -159,5 +159,64 @@ def main(rank, world_size, num_epochs):
 
     model.eval()
 
+    try:
+        train_acc = compute_accuracy(model, train_loader, device=rank)
+        print(f"[GPU{rank}] Training accuracy", train_acc)
+        test_acc = compute_accuracy(model, test_loader, device=rank)
+        print(f"[GPU{rank}] Test accuracy", test_acc)
 
+    except ZeroDivisionError as e:
+        raise ZeroDivisionError(
+            f"{e}\n\nThis script is designed for 2 GPUs. You can run it as:\n"
+            "torchrun --nproc_per_node=2 DDP-script-torchrun.py\n"
+            f"Or, to run it on {torch.cuda.device_count()} GPUs, uncomment the code on lines 97 to 101."
+        )
     
+    destroy_process_group()
+
+
+
+
+def compute_accuracy(model, dataloader, device):
+    model = model.eval()
+    correct = 0.0
+    total_examples = 0
+
+    for idx, (features, labels) in enumerate(dataloader):
+        features, labels = features.to(device), labels.to(device)
+
+        with torch.no_grad():
+            logits = model(features)
+        predictions = torch.argmax(logits, dim=1)
+        compare = labels==predictions
+        correct += torch.sum(compare)
+        total_examples += len(compare)
+    return (correct / total_examples).item()
+    
+
+
+if __name__ == "__main__":
+    # NEW: Use environment variables set by torchrun if available, otherwise default to single-process.
+    if "WORLD_SIZE" in os.environ:
+        world_size = int(os.environ["WORLD_SIZE"])
+    else:
+        world_size = 1
+
+    if "LOCAL_RANK" in os.environ:
+        rank = int(os.environ["LOCAL_RANK"])
+    elif "RANK" in os.environ:
+        rank = int(os.environ["RANK"])
+    else:
+        rank = 0
+
+    # Only print on rank 0 to avoid duplicate prints from each GPU process
+    if rank == 0:
+        print("PyTorch version:", torch.__version__)
+        print("CUDA available:", torch.cuda.is_available())
+        print("Number of GPUs available:", torch.cuda.device_count())
+
+    torch.manual_seed(123)
+    num_epochs = 3
+    main(rank, world_size, num_epochs)
+    
+
