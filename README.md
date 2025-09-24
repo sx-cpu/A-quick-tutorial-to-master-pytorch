@@ -33,3 +33,10 @@ All content is based on [Liuerdaren 's video on BiliBili](https://www.bilibili.c
     2. mnist: run [softmax_classifier.py](pytorch_tutorial_from_Liuer/code/softmax_classifer.py) to automatically obtain.
       
     
+### Example from a book about AI_security, the topic i am researching
+
+#### outline
+1. code
+    - demo.py 
+    - pretrained_model.py
+2. picture
