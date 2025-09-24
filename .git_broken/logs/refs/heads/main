@@ -1,0 +1,20 @@
+0000000000000000000000000000000000000000 3b65e2822e2b7d1e9113f993b9295e6663fd5065 sx-cpu <sunshixing71@gmail.com> 1757754228 +0800	commit (initial): first commit
+3b65e2822e2b7d1e9113f993b9295e6663fd5065 3b65e2822e2b7d1e9113f993b9295e6663fd5065 sx-cpu <sunshixing71@gmail.com> 1757754228 +0800	Branch: renamed refs/heads/master to refs/heads/main
+3b65e2822e2b7d1e9113f993b9295e6663fd5065 365abb7fbda4579273091454beaac21be495013f sx-cpu <sunshixing71@gmail.com> 1757754290 +0800	commit: tensor autograd and nn
+365abb7fbda4579273091454beaac21be495013f 0a8c34615d1cc33bdd5e356bc4062be839170d20 sx-cpu <sunshixing71@gmail.com> 1757774188 +0800	commit: dataset
+0a8c34615d1cc33bdd5e356bc4062be839170d20 46ee70338ae774ca392141185fc56be95913018c sx-cpu <sunshixing71@gmail.com> 1757818888 +0800	commit: train and data_load
+46ee70338ae774ca392141185fc56be95913018c 041dbbf5d6d4371a4dc30dbb7bc4afb3fcdabec9 sx-cpu <sunshixing71@gmail.com> 1757842267 +0800	commit: train and eval
+041dbbf5d6d4371a4dc30dbb7bc4afb3fcdabec9 fe9853da41759303ed2bd587df598da9913f37ed sx-cpu <sunshixing71@gmail.com> 1757901049 +0800	commit: using GPU
+fe9853da41759303ed2bd587df598da9913f37ed d91d7f026d3d3e45f5b99ea8b49550d6c0c5395d sx-cpu <sunshixing71@gmail.com> 1757943756 +0800	commit: Multi_GPU
+d91d7f026d3d3e45f5b99ea8b49550d6c0c5395d 86410bee8a35374a15b00793932196a47d9e5190 sx-cpu <sunshixing71@gmail.com> 1758271705 +0800	commit: SGD
+86410bee8a35374a15b00793932196a47d9e5190 b5f3a96ef6ce138b44826d2478d6073d88c74e80 sx-cpu <sunshixing71@gmail.com> 1758337715 +0800	commit: linear regression
+b5f3a96ef6ce138b44826d2478d6073d88c74e80 58feab5a9f1a8dbba757f840880b6f15ba4ee25c sx-cpu <sunshixing71@gmail.com> 1758418237 +0800	commit: linear regression
+58feab5a9f1a8dbba757f840880b6f15ba4ee25c 2505fc8a0c704aae9c6fc5de3c5a981679ccd0f4 sx-cpu <sunshixing71@gmail.com> 1758469462 +0800	commit: logistic regression
+2505fc8a0c704aae9c6fc5de3c5a981679ccd0f4 87ef62a4b1dd831b3df62ad52e645981222ecf3c sx-cpu <sunshixing71@gmail.com> 1758505799 +0800	commit: logistic regression
+87ef62a4b1dd831b3df62ad52e645981222ecf3c 6e5f4cc97ff7161cad109234fc1c8efbab07dff8 sx-cpu <sunshixing71@gmail.com> 1758537129 +0800	commit: dataset and dataloader
+6e5f4cc97ff7161cad109234fc1c8efbab07dff8 ff50541396748f389746a24f3e7d1378ceba830a sx-cpu <sunshixing71@gmail.com> 1758537254 +0800	commit: dataset and dataloader
+ff50541396748f389746a24f3e7d1378ceba830a 8b7907be4f5c0768ca5e094f3cb12b897963098f sx-cpu <sunshixing71@gmail.com> 1758581478 +0800	commit: softmax classification
+8b7907be4f5c0768ca5e094f3cb12b897963098f 512ceda63b5276320f49415e0a9ee1b122e21af5 sx-cpu <sunshixing71@gmail.com> 1758581588 +0800	commit: softmax classification
+512ceda63b5276320f49415e0a9ee1b122e21af5 d9c16f36040348a591d774ea68a15fd17a5af9df sx-cpu <sunshixing71@gmail.com> 1758634874 +0800	commit: basic CNN
+d9c16f36040348a591d774ea68a15fd17a5af9df 17823085ddf7a3fa54261c3313a052d224b6c2e2 sx-cpu <sunshixing71@gmail.com> 1758635070 +0800	commit: CNN
+17823085ddf7a3fa54261c3313a052d224b6c2e2 cf7fc88eca01e1b319fd595a57eb17f31d8958c8 sx-cpu <sunshixing71@gmail.com> 1758678602 +0800	commit: demo
