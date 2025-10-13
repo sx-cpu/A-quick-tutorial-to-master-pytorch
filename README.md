@@ -1,5 +1,5 @@
 # A-quick-tutorial-to-master-pytorch
-
+ 
 ### Advice for learning pytorch from my point of view
 1. If you are new to Pytorch, start with [sebastianraschka's blog](https://sebastianraschka.com/teaching/pytorch-1h/) first. It gives a well-structured overview of Pytorch basics. Don't worry too much about the details -- try running the sample code yourself to reinforce understanding and memory.
 
